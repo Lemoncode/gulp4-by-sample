@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Santiago Camargo Rodríguez <santi.camargo.rodriguez@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-connect": "^5.0.0"
+  },
+  "dependencies": {
+  }
+}
