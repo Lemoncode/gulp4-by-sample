@@ -1,7 +1,6 @@
 # Module 3 - Bundling - Gulp
 
-Altough Gulp is a tool that is becoming superseeded by bundling tools like
-wepback, jspm or browserify, is still in use by many projects.
+Set of step by step guided samples, based on Gulp 4.
 
 In this samples series we are going to cover some basic functionallity that
 could you get started if in the future you join a legacy project.
