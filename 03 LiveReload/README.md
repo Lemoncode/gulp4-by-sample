@@ -64,6 +64,11 @@ gulp.task('force-reload', function() {
 gulp.task('build-dev', gulp.series('clean', 'copy-dev', 'force-reload'));
 ```
 
+- Now run _gulp build-dev_ process 
+```
+gulp build-dev
+```
+
 - It's time to test it, run _gulp web_, launch the browser, then grab a HTML
 or js file, add some change and check that the build process gets launched
 and the browser automatically refreshes the page displaying the new updates.
