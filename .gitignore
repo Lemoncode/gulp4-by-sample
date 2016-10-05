@@ -7,3 +7,4 @@ typings/
 02 webpack/00 Intro/00 BoilerPlate/bundle.js
 02 webpack/00 Intro/01 Import/bundle.js
 02 webpack/00 Intro/02 Server/bundle.js
+.editorconfig
