@@ -15,3 +15,7 @@ Samples description:
 
 - **02 Production**: Concatenating all js files + uglify and updating HTML in
 dist folder to point to the new js bundle file.
+
+-- **03 LifeReload:**
+
+-- **04 SASS:** Let's make a sample HTML with javascript minified, SASS and we can use it a watcher to rebuild the project.
