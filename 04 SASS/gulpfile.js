@@ -37,14 +37,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('generate-prod-js-html', function() {
+gulp.task('generate-prod-html', function() {
   return   gulp.src('./src/index.html')
              .pipe(htmlreplace({
                'js': '<script src="app.min.js"></script>',
+               'sass': '<link rel="stylesheet" href="main.css">'
              }))
              .pipe(gulp.dest('./dist')
            );
-
 
 });
 
@@ -58,7 +58,7 @@ gulp.task('create-bundle-js', function() {
 
 gulp.task('build-dev', gulp.series(
           'clean', 'copy-dev', 'sass',
-          gulp.parallel('generate-prod-js-html','create-bundle-js'),
+          gulp.parallel('generate-prod-html','create-bundle-js'),
           'force-reload'));
 
 
