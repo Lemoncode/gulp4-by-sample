@@ -124,7 +124,7 @@ var gulp = require('gulp');
 
     ```javascript
     ...
-    gulp.task('default', gulp.series('connect'));
+    gulp.task('web', gulp.series('connect'));
     ```
 
 - Run dev web server launch by typing:
