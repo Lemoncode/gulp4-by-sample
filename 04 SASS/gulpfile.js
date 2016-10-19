@@ -58,14 +58,13 @@ gulp.task('create-bundle-js', function() {
 
 gulp.task('build-dev', gulp.series(
           'clean', 'copy-dev', 'sass',
-          gulp.parallel('generate-prod-html','create-bundle-js'),
-          'force-reload'));
+          gulp.parallel('generate-prod-html','create-bundle-js')));
 
 
 
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/**/*.html', './src/**/*.js', './src/sass/**/*.scss'], gulp.series('build-dev'))
+  gulp.watch(['./src/**/*.html', './src/**/*.js', './src/sass/**/*.scss'], gulp.series('build-dev', 'force-reload'))
 });
 
 

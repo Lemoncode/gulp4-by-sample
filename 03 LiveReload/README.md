@@ -58,13 +58,15 @@ gulp.task('force-reload', function() {
 });
 ```
 
-- Let's add this task at the end of the _build-dev_ process
+- Let's add this task at the end of the _watch_ process
 
 ```javascript
-gulp.task('build-dev', gulp.series('clean', 'copy-dev', 'force-reload'));
+gulp.task('watch', function() {
+  gulp.watch(['./src/**/*.html', './src/**/*.js'], gulp.series('build-dev', 'force-reload'))
+});
 ```
 
-- Now run _gulp build-dev_ process 
+- Now run _gulp build-dev_ process
 ```
 gulp build-dev
 ```

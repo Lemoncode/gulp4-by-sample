@@ -12,7 +12,7 @@ gulp.task('connect', function() {
   });
 });
 
- 
+
  gulp.task('clean', function() {
    return del([
        'dist/**/*'
@@ -44,7 +44,7 @@ gulp.task('generate-prod-html', function() {
 });
 
 
-gulp.task('build-dev', gulp.series('clean', 'copy-dev', 'force-reload'));
+gulp.task('build-dev', gulp.series('clean', 'copy-dev'));
 
 gulp.task('create-bundle', function() {
     return gulp.src('./src/**/*.js')
@@ -56,7 +56,7 @@ gulp.task('create-bundle', function() {
 
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/**/*.html', './src/**/*.js'], gulp.series('build-dev'))
+  gulp.watch(['./src/**/*.html', './src/**/*.js'], gulp.series('build-dev', 'force-reload'))
 });
 
 

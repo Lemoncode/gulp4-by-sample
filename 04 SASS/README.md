@@ -123,7 +123,7 @@ npm install gulp-sass --save-dev
 
   ```
   gulp.task('watch', function() {
-  gulp.watch(['./src/**/*.html', './src/**/*.js', './src/sass/**/*.scss'], gulp.series('build-dev'))
+  gulp.watch(['./src/**/*.html', './src/**/*.js', './src/sass/**/*.scss'], gulp.series('build-dev', 'force-reload'))
 });
   ```
   - Remembering a build-dev task and also adding minor changes: add the sass task
@@ -131,8 +131,7 @@ npm install gulp-sass --save-dev
   ```
   gulp.task('build-dev', gulp.series(
           'clean', 'copy-dev', 'sass',
-          gulp.parallel('generate-prod-js-html','create-bundle-js'),
-          'force-reload'));
+          gulp.parallel('generate-prod-js-html','create-bundle-js')));
   ```
 
 
