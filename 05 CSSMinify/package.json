@@ -1,0 +1,23 @@
+{
+  "name": "samplesass",
+  "version": "1.0.0",
+  "description": "In this sample we are going to create a simple html page with css, using sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "web"
+  },
+  "author": "Rocio G. Hermoso",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-4.0.build": "^4.0.0-build.a271520",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+// Variables declaration
+$baseSize: 14px;
+
+// external imports
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+@import "colors.scss";
+
+/* Basics */
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: $baseSize;
+}
+
+h1 {
+    font-size: $baseSize + 10px;
+}
+
+a {
+  background-color: $mainColor;
+  &:hover{
+    background-color: $hoverColor;
+  }
+}
